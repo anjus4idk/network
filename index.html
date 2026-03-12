@@ -6,29 +6,50 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 20px;
+      background-color: #f2f2f2;
       line-height: 1.6;
-      background-color: #f9f9f9;
     }
+
     h1 {
       color: #2c3e50;
+      text-align: center;
     }
+
     h2 {
       color: #34495e;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 3px solid #3498db;
       padding-bottom: 5px;
     }
+
     ul {
       list-style-type: square;
+      padding-left: 20px;
     }
-    .project {
+
+    .project, .skills {
       background-color: #fff;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-left: 5px solid #3498db;
-      box-shadow: 1px 1px 5px #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 6px solid #3498db; /* Blue border for projects and skills */
+      box-shadow: 1px 1px 8px #ccc;
+    }
+
+    .project img {
+      max-width: 100%;
+      margin-top: 10px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+    }
+
+    .container {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -37,20 +58,31 @@
 <h1>Hello, I'm Anju</h1>
 <p><strong>L2 Networking & IT Technical Support Learner</strong></p>
 
-<h2>Skills</h2>
-<ul>
-  <li>Network Troubleshooting</li>
-  <li>TCP/IP</li>
-  <li>DNS & DHCP</li>
-  <li>Windows Support</li>
-</ul>
-
-<h2>Projects</h2>
-<div class="project">
-  <strong>Small Office Network</strong> - Cisco Packet Tracer
+<div class="container skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Network Troubleshooting</li>
+    <li>TCP/IP</li>
+    <li>DNS & DHCP</li>
+    <li>Windows Support</li>
+  </ul>
 </div>
-<div class="project">
-  <strong>Basic Network Troubleshooting Lab</strong>
+
+<div class="container">
+  <h2>Projects</h2>
+  
+  <div class="project">
+    <strong>Small Office Network - Cisco Packet Tracer</strong>
+    <p>Designed a small office network with routers, switches, and IP addressing.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Cisco_packet_tracer_logo.png" alt="Cisco Packet Tracer Lab">
+  </div>
+
+  <div class="project">
+    <strong>Basic Network Troubleshooting Lab</strong>
+    <p>Practiced troubleshooting connectivity issues using ping, ipconfig, and tracert commands.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Network_diagram.svg" alt="Network Troubleshooting Lab">
+  </div>
+
 </div>
 
 </body>
